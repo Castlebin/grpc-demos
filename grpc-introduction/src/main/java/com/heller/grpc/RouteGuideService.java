@@ -103,7 +103,7 @@ public class RouteGuideService extends RouteGuideGrpc.RouteGuideImplBase {
      * 通过实现 StreamObserver 对应的回调方法
      */
     @Override
-    public StreamObserver<Point> recodeRoute(StreamObserver<RouteSummary> responseObserver) {
+    public StreamObserver<Point> recordRoute(StreamObserver<RouteSummary> responseObserver) {
         return new StreamObserver<Point>() {
             int pointCount;
             int featureCount;
