@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.heller.model.person.proto";
+option java_outer_classname = "PersonProto";
+
+package hello_grpc_person;
+
+message Person {
+  string name = 1;
+  int32 id = 2;
+  bool has_ponycopter = 3;
+}
